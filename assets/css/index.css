@@ -1,0 +1,496 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 120vh;
+    background-image: url(../imgs/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding: 0 2rem; */
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+P {
+    position: absolute;
+    font-size: 6rem;
+    color: white;
+    top: 30%;
+    right: 20%;
+    font-weight: 200;
+}
+
+nav {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10rem;
+    margin-top: .5rem;
+    border-bottom: .1px solid rgba(255, 255, 255, 0.229);
+    padding-right: 3rem;
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.left i {
+    width: 2.5rem;
+    border-right: 1px solid white;
+    padding: 0 10px;
+    color: white;
+}
+
+.left .contact {
+    padding-left: 1rem;
+}
+
+.right {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.right a {
+    width: 6rem;
+    border-right: 1px solid white;
+    text-align: center;
+}
+
+.right a select {
+    background-color: none;
+    border: none;
+    background: none;
+    padding-left: .5rem;
+    color: white;
+}
+
+.right .select {
+    border: none;
+}
+
+header {
+    width: 97%;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .8rem;
+    padding-left: 10.5rem;
+    position: fixed;
+    gap: 9rem;
+
+}
+
+header img {
+    width: 7rem;
+    height: 3rem;
+}
+
+header .middle {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 6rem;
+}
+
+header .middle .content {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header .middle select {
+    background-color: none;
+    border: none;
+    background: none;
+    padding-left: .5rem;
+    color: white;
+}
+
+header .last {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+header .last button {
+    background-color: rgb(7, 88, 201);
+    color: white;
+    width: 6rem;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.scrolled {
+    background-color: #333333c4;
+    color: black;
+    box-shadow: 0px 4px 7px #777;
+    top: -15px;
+    z-index: 2;
+    width: 100%;
+    padding-right: 3rem;
+}
+
+
+
+@media only screen and (max-width: 678px) {
+
+    P {
+        position: absolute;
+        width: 90%;
+        font-size: 4rem;
+        color: white;
+        top: 40%;
+        left: 10%;
+    }
+
+    nav {
+        height: 4rem;
+        flex-direction: column;
+        gap: .5rem;
+        padding-right: 0rem;
+
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .left i {
+        width: 0rem;
+        padding: 0 10px;
+        border: none;
+    }
+
+    .right {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header {
+        width: 100%;
+        height: 6rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: .1rem;
+        padding-left: 0rem;
+        position: fixed;
+        gap: 0rem;
+
+    }
+
+    header img {
+        width: 5rem;
+        height: 2rem;
+    }
+
+    header .middle {
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0rem;
+    }
+
+    header .middle .content {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: 2rem;
+    }
+
+    header .middle select {
+        padding-left: 0;
+    }
+
+    header .last {
+        width: 20%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    header .last button {
+        background-color: rgb(7, 88, 201);
+        color: white;
+        width: 6rem;
+        height: 2rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .scrolled {
+        background-color: #333333c4;
+        color: black;
+        justify-content: space-around;
+        margin-top: .7rem;
+        box-shadow: 0px 4px 7px #777;
+        top: -15px;
+        z-index: 2;
+        width: 100%;
+        padding-right: 0rem;
+    }
+
+}
+
+@media only screen and (min-width: 678px) and (max-width: 991px) {
+
+    P {
+        position: absolute;
+        width: 80%;
+        font-size: 4rem;
+        top: 35%;
+        left: 15%;
+    }
+
+    nav {
+        width: 100%;
+        height: 2rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0rem;
+        margin-top: .5rem;
+        border-bottom: .1px solid rgba(255, 255, 255, 0.229);
+        /* background-color: aqua; */
+    }
+
+    .left {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0;
+        width: 60%;
+        padding-left: 2rem;
+    }
+
+    .left i {
+        width: 2rem;
+        border-right: none;
+        padding: 0 7px;
+        color: white;
+    }
+
+    .left .contact {
+        padding-left: 0rem;
+    }
+
+    .right {
+        width: 45%;
+    }
+
+    .right a {
+        width: 5rem;
+
+    }
+
+    .right a select {
+        background-color: none;
+        border: none;
+        background: none;
+        padding-left: .0rem;
+        color: white;
+    }
+
+    header {
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-top: .8rem;
+        padding-left: 7px;
+        position: fixed;
+        gap: 1rem;
+
+    }
+
+    header img {
+        width: 5rem;
+        height: 3rem;
+    }
+
+    header .middle {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1rem;
+        padding-left: 2rem;
+    }
+
+    header .middle .content {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    header .middle select {
+        background-color: none;
+        border: none;
+        background: none;
+        padding-left: .5rem;
+        color: white;
+    }
+
+    header .last {
+        width: 20%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    header .last button {
+        background-color: rgb(7, 88, 201);
+        color: white;
+        width: 6rem;
+        height: 2rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .scrolled {
+        background-color: #333333c4;
+        color: black;
+        box-shadow: 0px 4px 7px #777;
+        top: -15px;
+        z-index: 2;
+        width: 100%;
+        padding-right: 0rem;
+    }
+
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1190px) {
+
+    P {
+        position: absolute;
+        width: 80%;
+        font-size: 4rem;
+        color: white;
+        top: 35%;
+        left: 27%;
+        font-weight: 200;
+    }
+
+    nav {
+        width: 100%;
+        height: 2rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+        margin-top: .5rem;
+        border-bottom: .1px solid rgba(255, 255, 255, 0.229);
+        /* background-color: aqua; */
+    }
+
+    .left {
+        width: 50%;
+    }
+
+    .left i {
+        width: 2.5rem;
+        border-right: 1px solid white;
+        padding: 0 10px;
+        color: white;
+    }
+
+    .left .contact {
+        padding-left: 1rem;
+    }
+
+    .right {
+        width: 40%;
+    }
+
+    header {
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-top: .8rem;
+        padding-left: 4rem;
+        position: fixed;
+        gap: 0rem;
+
+    }
+
+    header img {
+        width: 7rem;
+        height: 3rem;
+    }
+
+    header .middle {
+        width: 70%;
+        gap: 1rem;
+        padding-left: 0rem;
+    }
+
+    header .middle .contect {
+        gap: 0rem;
+    }
+
+    .scrolled {
+        background-color: #333333c4;
+        color: black;
+        box-shadow: 0px 4px 7px #777;
+        top: -15px;
+        z-index: 2;
+        width: 100%;
+        padding-right: 0rem;
+    }
+}
